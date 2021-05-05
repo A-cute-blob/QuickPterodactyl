@@ -2,7 +2,7 @@
   "meta": {
     "generator": "0.9.0",
     "format": 20,
-    "date": 1620225739554
+    "date": 1620229424908
   },
   "custom": {
     "general": {
@@ -11,7 +11,7 @@
         "welcome": {
           "name": "Welcome",
           "type": "md",
-          "content": "# ✨ Quick Pterodactyl\n\n[![downloadsBadge](https://img.shields.io/npm/dt/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n[![versionBadge](https://img.shields.io/npm/v/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n\n\n## Features\n- 🔌 Simple And Easy To Get Started\n- 🚀 Super-powerful\n- 🕸️ User Friendly\n\n## 📌 Installation\n ```$ npm i quickpterodactyl\n ```\n\n## Classes \n  - User\n  - Client\n## Methods\n- Create\n- Delete\n- Check\n- Update\n- More included in the documentation\n\n\n",
+          "content": "# ✨ Quick Pterodactyl\n\n[![downloadsBadge](https://img.shields.io/npm/dt/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n[![versionBadge](https://img.shields.io/npm/v/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n\n\n## Features\n- 🔌 Simple And Easy To Get Started\n- 🚀 Super-powerful\n- 🕸️ User Friendly\n\n## 📌 Installation\n ```sh \n $ npm i quickpterodactyl\n ```\n\n## Classes \n  - User\n  - Client\n## Methods\n- Create\n- Delete\n- Check\n- Update\n- More included in the documentation\n\n\n",
           "path": "docs/general/welcome.md"
         }
       }
@@ -75,269 +75,10 @@
           }
         ]
       },
-      "methods": [
+      "events": [
         {
-          "name": "server_create",
-          "description": "Creates a server",
-          "scope": "static",
-          "examples": [
-            "await client.server_create({\n                name: 'lol',\n                user: 1,\n                egg: 1,\n                nest: 1,\n                startup: 'node index.js',\n                docker_image: 'la la la',\n                environment: {},\n                limits: {\n                    memory: 1,\n                    swap: 1,\n                    disk: 1,\n                    io: 1,\n                    cpu: 1\n                },\n                feature_limits: {\n                    databases: 1,\n                    allocations: 1,\n                    backups: 1,\n                },\n                deploy: {\n                    locations: [],\n                    dedicated_ip: true,\n                    port_range: []\n                },\n            })"
-          ],
-          "params": [
-            {
-              "name": "ops",
-              "description": "The options required for creating a server",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.name",
-              "description": "The name of the server",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.user",
-              "description": "The id of the user",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.egg",
-              "description": "The id of the egg",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.nest",
-              "description": "The nest id",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.startup",
-              "description": "The startup command",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.docker_image",
-              "description": "The docker Image",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.environment",
-              "description": "The environment option",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits",
-              "description": "The limits of the server",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits.memory",
-              "description": "The memory limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits.swap",
-              "description": "The swap limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits.disk",
-              "description": "The disk limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits.io",
-              "description": "The io limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.limits.cpu",
-              "description": "The cpu limits of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.feature_limits",
-              "description": "The feature limits of the server",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.feature_limits.databases",
-              "description": "The database limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.feature_limits.allocations",
-              "description": "The allocation limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.feature_limits.backups",
-              "description": "The backup limit of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.deploy",
-              "description": "The deploy parameters",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.deploy.locations",
-              "description": "The locations of the serber",
-              "type": [
-                [
-                  [
-                    "array"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.deploy.dedicated_ip",
-              "description": "State whether the server is on  a dedicated ip",
-              "type": [
-                [
-                  [
-                    "boolean"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.deploy.port_range",
-              "description": "The port range of the server",
-              "type": [
-                [
-                  [
-                    "array"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "object"
-                ]
-              ]
-            ],
-            "description": "res"
-          },
+          "name": "serverCreate",
+          "description": "Emitted when server is created",
           "meta": {
             "line": 116,
             "file": "Client.js",
@@ -345,38 +86,10 @@
           }
         },
         {
-          "name": "server_delete",
-          "description": "Deletes a server",
-          "scope": "static",
-          "examples": [
-            "client.server_delete(1)"
-          ],
-          "params": [
-            {
-              "name": "id",
-              "description": "The id of the server",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "object"
-                ]
-              ]
-            ],
-            "description": "res"
-          },
+          "name": "serverDelete",
+          "description": "Emitted when server is deleted",
           "meta": {
-            "line": 178,
+            "line": 184,
             "file": "Client.js",
             "path": "src"
           }
@@ -388,6 +101,7 @@
         "path": "src"
       }
     },
+
     {
       "name": "User",
       "construct": {
@@ -429,317 +143,39 @@
           }
         ]
       },
-      "methods": [
+      "events": [
         {
-          "name": "create",
-          "description": "Creates a account in the panel",
-          "scope": "static",
-          "examples": [
-            "user.create({ username: 'abc', email: 'abc@gmail.com', password: 'abc', first_name: 'bla bla', last_name: 'bla-bla', root_admin: false, language: 'en' })"
-          ],
-          "params": [
-            {
-              "name": "ops",
-              "description": "The options used in creating",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.username",
-              "description": "The username of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.email",
-              "description": "The email of the user",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.password",
-              "description": "The password of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.first_name",
-              "description": "The first name of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.last_name",
-              "description": "The last name of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.root_admin",
-              "description": "Whether the user is admin or Not",
-              "type": [
-                [
-                  [
-                    "boolean"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.language",
-              "description": "The default language of the user",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "any"
-                ]
-              ]
-            ],
-            "description": "res The response from the ptero api"
-          },
+          "name": "accountCreate",
+          "description": "Emitted when account is created",
           "meta": {
-            "line": 51,
+            "line": 49,
             "file": "User.js",
             "path": "src"
           }
         },
         {
-          "name": "update",
-          "description": "Updates a account in the panel",
-          "scope": "static",
-          "examples": [
-            "user.update(1, { username: 'abc', email: 'abc@gmail.com', password: 'abc', first_name: 'bla bla', last_name: 'bla-bla', root_admin: false, language: 'en' })"
-          ],
-          "params": [
-            {
-              "name": "id",
-              "description": "The id of the user",
-              "default": 1,
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops",
-              "description": "The options used in updating",
-              "type": [
-                [
-                  [
-                    "object"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.username",
-              "description": "The username of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.email",
-              "description": "The email of the user",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.password",
-              "description": "The password of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.first_name",
-              "description": "The first name of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.last_name",
-              "description": "The last name of the User",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.root_admin",
-              "description": "Whether the user is admin or Not",
-              "type": [
-                [
-                  [
-                    "boolean"
-                  ]
-                ]
-              ]
-            },
-            {
-              "name": "ops.language",
-              "description": "The default language of the user",
-              "type": [
-                [
-                  [
-                    "string"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "any"
-                ]
-              ]
-            ],
-            "description": "res The response from the ptero api"
-          },
+          "name": "accountUpdate",
+          "description": "Emitted when account is updated",
           "meta": {
-            "line": 97,
+            "line": 104,
             "file": "User.js",
             "path": "src"
           }
         },
         {
-          "name": "delete",
-          "description": "Deletes a account in the panel",
-          "scope": "static",
-          "examples": [
-            "user.delete(1)"
-          ],
-          "params": [
-            {
-              "name": "id",
-              "description": "The id of the user",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "any"
-                ]
-              ]
-            ],
-            "description": "res The response from the ptero api"
-          },
+          "name": "accountDelete",
+          "description": "Emitted when account is deleted",
           "meta": {
-            "line": 142,
+            "line": 154,
             "file": "User.js",
             "path": "src"
           }
         },
         {
-          "name": "details",
-          "description": "Checks a account in the panel",
-          "scope": "static",
-          "examples": [
-            "user.details(1)"
-          ],
-          "params": [
-            {
-              "name": "id",
-              "description": "The id of the user",
-              "type": [
-                [
-                  [
-                    "number"
-                  ]
-                ]
-              ]
-            }
-          ],
-          "async": true,
-          "returns": {
-            "types": [
-              [
-                [
-                  "any"
-                ]
-              ]
-            ],
-            "description": "res The response from the ptero api"
-          },
+          "name": "accountCheck",
+          "description": "Emitted when account is checked",
           "meta": {
-            "line": 166,
+            "line": 186,
             "file": "User.js",
             "path": "src"
           }
