@@ -2,9 +2,38 @@
   "meta": {
     "generator": "0.9.0",
     "format": 20,
-    "date": 1620191076368
+    "date": 1620225739554
   },
-  "custom": null,
+  "custom": {
+    "general": {
+      "name": "General",
+      "files": {
+        "welcome": {
+          "name": "Welcome",
+          "type": "md",
+          "content": "# ✨ Quick Pterodactyl\n\n[![downloadsBadge](https://img.shields.io/npm/dt/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n[![versionBadge](https://img.shields.io/npm/v/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n\n\n## Features\n- 🔌 Simple And Easy To Get Started\n- 🚀 Super-powerful\n- 🕸️ User Friendly\n\n## 📌 Installation\n ```sh \n $ npm i quickpterodactyl\n ```\n\n## Classes \n  - User\n  - Client\n## Methods\n- Create\n- Delete\n- Check\n- Update\n- More included in the documentation\n\n\n",
+          "path": "docs/general/welcome.md"
+        }
+      }
+    },
+    "examples": {
+      "name": "Examples",
+      "files": {
+        "user": {
+          "name": "Create a user",
+          "type": "md",
+          "content": "# Create user example\n\n```js\nconst { User } = require('quickpterodactyl')\nconst user = new User('abc.com', 'api_key')\nuser.create({ username: 'abc', email: 'abc@gmail.com', password: 'abc', first_name: 'bla bla', last_name: 'bla-bla', root_admin: false, language: 'en' })\n\n```",
+          "path": "docs/examples/user.md"
+        },
+        "server": {
+          "name": "Create a server",
+          "type": "md",
+          "content": "# Create server example\n\n```js\nconst { Client } = require('quickpterodactyl')\nconst client = new client('abc.com', 'api_key')\n client.server_create({\n                name: 'lol',\n                user: 1,\n                egg: 1,\n                nest: 1,\n                startup: 'node index.js',\n                docker_image: 'la la la',\n                environment: {},\n                limits: {\n                    memory: 1,\n                    swap: 1,\n                    disk: 1,\n                    io: 1,\n                    cpu: 1\n                },\n                feature_limits: {\n                    databases: 1,\n                    allocations: 1,\n                    backups: 1,\n                },\n                deploy: {\n                    locations: [],\n                    dedicated_ip: true,\n                    port_range: []\n                },\n            })\n```",
+          "path": "docs/examples/server.md"
+        }
+      }
+    }
+  },
   "classes": [
     {
       "name": "Client",

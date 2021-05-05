@@ -1,4 +1,4 @@
-const user = require('./src/index');
+const user = require('./src/User');
 const client = require('./src/Client');
 
 module.exports = {
