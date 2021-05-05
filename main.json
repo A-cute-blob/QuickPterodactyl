@@ -389,30 +389,6 @@
       }
     },
     {
-      "name": "Err",
-      "description": "The Error Managing module",
-      "extends": [
-        [
-          [
-            "Error"
-          ]
-        ]
-      ],
-      "meta": {
-        "line": 1,
-        "file": "error.js",
-        "path": "src"
-      }
-    },
-    {
-      "name": "Emitter",
-      "meta": {
-        "line": 2,
-        "file": "event.js",
-        "path": "src"
-      }
-    },
-    {
       "name": "User",
       "construct": {
         "name": "User",
