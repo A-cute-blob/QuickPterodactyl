@@ -11,7 +11,7 @@
         "welcome": {
           "name": "Welcome",
           "type": "md",
-          "content": "# ✨ Quick Pterodactyl\n\n[![downloadsBadge](https://img.shields.io/npm/dt/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n[![versionBadge](https://img.shields.io/npm/v/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n\n\n## Features\n- 🔌 Simple And Easy To Get Started\n- 🚀 Super-powerful\n- 🕸️ User Friendly\n\n## 📌 Installation\n ```sh \n $ npm i quickpterodactyl\n ```\n\n## Classes \n  - User\n  - Client\n## Methods\n- Create\n- Delete\n- Check\n- Update\n- More included in the documentation\n\n\n",
+          "content": "# ✨ Quick Pterodactyl\n\n[![downloadsBadge](https://img.shields.io/npm/dt/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n[![versionBadge](https://img.shields.io/npm/v/quickpterodactyl?style=for-the-badge)](https://npmjs.com/package/quickpterodactyl)\n\n\n## Features\n- 🔌 Simple And Easy To Get Started\n- 🚀 Super-powerful\n- 🕸️ User Friendly\n\n## 📌 Installation\n ```$ npm i quickpterodactyl\n ```\n\n## Classes \n  - User\n  - Client\n## Methods\n- Create\n- Delete\n- Check\n- Update\n- More included in the documentation\n\n\n",
           "path": "docs/general/welcome.md"
         }
       }
