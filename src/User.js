@@ -46,7 +46,7 @@ class User extends events {
  * @returns {any} res The response from the ptero api
 
  */
-	   
+	   		
 
 	    static async create(ops) {
 			const user = User;
@@ -94,6 +94,7 @@ class User extends events {
  * @example user.update(1, { username: 'abc', email: 'abc@gmail.com', password: 'abc', first_name: 'bla bla', last_name: 'bla-bla', root_admin: false, language: 'en' })
  * @returns {any} res The response from the ptero api
  */
+   
 	    static async update(id=1, ops) {
 			const user = User
 	      if (typeof id !== 'number') throw new Error('Id must be a number');
@@ -137,7 +138,7 @@ class User extends events {
 		 * @example user.delete(1)
 		 * @returns {any} res The response from the ptero api
 		 */
-
+			   
 
 	    static async delete(id) {
 	      if (!id) throw new Error('Please provide a id');
@@ -162,7 +163,7 @@ class User extends events {
 		 * @example user.details(1)
 		 * @returns {any} res The response from the ptero api
 		 */
-	   
+	   	
 	    static async details(id) {
 	      if (!id) throw new Error('Please provide a id');
 	      if (typeof(id) !== 'number') throw new Error('The id is not a number');
@@ -178,7 +179,30 @@ class User extends events {
 	        return res;
 	      });
 	    }
-			    /**
+
+		
+
+	
+		
+
+}
+export default User;
+ /**
+				 * Emitted when account is created
+				 * @event User#accountCreate
+				 * @emits {any} res The response Emitted
+				 * @example user.on('accountCreate', async res => {
+				 * console.log(res)
+				 * })
+				 */
+				 /**  Emitted when account is updated
+				 * @event User#accountUpdate
+				 * @emits {any} res The response Emitted
+				 * @example user.on('accountUpdate', async res => {
+				 * console.log(res)
+				 * })
+				 */
+				 /**
 				 * Emitted when account is deleted
 				 * @event User#accountDelete
 				 * @emits {any} res The response Emitted
@@ -186,7 +210,7 @@ class User extends events {
 				 * console.log(res)
 				 * })
 				 */
-				 /**
+					 /**
 				 * Emitted when account is checked
 				 * @event User#accountCheck
 				 * @emits {any} res The response Emitted
@@ -195,21 +219,3 @@ class User extends events {
 				 * })
 				 */
 
-	    /**  Emitted when account is updated
-				 * @event User#accountUpdate
-				 * @emits {any} res The response Emitted
-				 * @example user.on('accountUpdate', async res => {
-				 * console.log(res)
-				 * })
-				 */
-				 /**
-				 * Emitted when account is created
-				 * @event User#accountCreate
-				 * @emits {any} res The response Emitted
-				 * @example user.on('accountCreate', async res => {
-				 * console.log(res)
-				 * })
-				 */
-
-}
-export default User;

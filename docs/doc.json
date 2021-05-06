@@ -2,7 +2,7 @@
   "meta": {
     "generator": "0.9.0",
     "format": 20,
-    "date": 1620225739554
+    "date": 1620283695283
   },
   "custom": {
     "general": {
@@ -339,7 +339,7 @@
             "description": "res"
           },
           "meta": {
-            "line": 116,
+            "line": 117,
             "file": "Client.js",
             "path": "src"
           }
@@ -376,7 +376,27 @@
             "description": "res"
           },
           "meta": {
-            "line": 178,
+            "line": 179,
+            "file": "Client.js",
+            "path": "src"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "serverCreate",
+          "description": "Emitted when server is created",
+          "meta": {
+            "line": 200,
+            "file": "Client.js",
+            "path": "src"
+          }
+        },
+        {
+          "name": "serverDelete",
+          "description": "Emitted when server is deleted",
+          "meta": {
+            "line": 207,
             "file": "Client.js",
             "path": "src"
           }
@@ -388,30 +408,7 @@
         "path": "src"
       }
     },
-    {
-      "name": "Err",
-      "description": "The Error Managing module",
-      "extends": [
-        [
-          [
-            "Error"
-          ]
-        ]
-      ],
-      "meta": {
-        "line": 1,
-        "file": "error.js",
-        "path": "src"
-      }
-    },
-    {
-      "name": "Emitter",
-      "meta": {
-        "line": 2,
-        "file": "event.js",
-        "path": "src"
-      }
-    },
+
     {
       "name": "User",
       "construct": {
@@ -689,7 +686,7 @@
             "description": "res The response from the ptero api"
           },
           "meta": {
-            "line": 97,
+            "line": 98,
             "file": "User.js",
             "path": "src"
           }
@@ -726,7 +723,7 @@
             "description": "res The response from the ptero api"
           },
           "meta": {
-            "line": 142,
+            "line": 143,
             "file": "User.js",
             "path": "src"
           }
@@ -763,7 +760,45 @@
             "description": "res The response from the ptero api"
           },
           "meta": {
-            "line": 166,
+            "line": 167,
+            "file": "User.js",
+            "path": "src"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "accountCreate",
+          "description": "Emitted when account is created",
+          "meta": {
+            "line": 190,
+            "file": "User.js",
+            "path": "src"
+          }
+        },
+        {
+          "name": "accountUpdate",
+          "description": "Emitted when account is updated",
+          "meta": {
+            "line": 198,
+            "file": "User.js",
+            "path": "src"
+          }
+        },
+        {
+          "name": "accountDelete",
+          "description": "Emitted when account is deleted",
+          "meta": {
+            "line": 205,
+            "file": "User.js",
+            "path": "src"
+          }
+        },
+        {
+          "name": "accountCheck",
+          "description": "Emitted when account is checked",
+          "meta": {
+            "line": 213,
             "file": "User.js",
             "path": "src"
           }

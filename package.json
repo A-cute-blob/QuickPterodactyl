@@ -2,9 +2,14 @@
   "name": "quickpterodactyl",
   "version": "1.0.0",
   "description": "A simple module made with javascript to handle pterodactyl panel",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
-    "test": "node test/index.ts"
+    "test": "echo test"
+  },
+  "homepage": "quickpterodactyl.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-cute-blob/QuickPterodactyl.git"
   },
   "keywords": [
     "ptero",
@@ -15,10 +20,7 @@
   "license": "GPL -3.0",
   "dependencies": {
     "@types/node-fetch": "^2.5.8",
-    "jsdoc-to-markdown": "^7.0.1",
-    "node-fetch": "^2.6.1",
-    "tsubaki": "^1.3.9",
-    "yargs": "^17.0.1"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.20.0",

@@ -113,6 +113,7 @@ this.url = ops.url
                 },
             })
   */
+
  static async server_create(ops=params) {
 if(!ops) throw new Error('Options not provided')
 if(typeof(ops) !== 'object') throw new Error('Excepted options to be object recieved ' + typeof(ops))
@@ -191,7 +192,12 @@ this.emit('serverDelete', res)
 
 }).catch(e => { throw new Error(e.message) })
 }
-/**
+
+
+}
+
+export default Client;
+ /**
  * Emitted when server is created 
  * @event Client#serverCreate
  * @emits {any} res The response from the ptero api
@@ -205,6 +211,3 @@ this.emit('serverDelete', res)
  * @example Client.on('serverDelete', async (res) => {
  * console.log('Created a server' + '\n' + res)}) 
  */
-}
-
-export default Client;
