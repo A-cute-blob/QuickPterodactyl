@@ -2,7 +2,7 @@
   "meta": {
     "generator": "0.9.0",
     "format": 20,
-    "date": 1620231789210
+    "date": 1620283695283
   },
   "custom": {
     "general": {
@@ -408,7 +408,6 @@
         "path": "src"
       }
     },
-
 
     {
       "name": "User",
